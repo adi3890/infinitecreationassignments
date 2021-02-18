@@ -13,7 +13,7 @@ $booked = Array('room1' => [[strtotime('09:30'), 2],[strtotime('12:00'), 1], [st
 
 echo "Please enter stating time of meeting in fromat hh:mm 24-hours format eg. '15:45' : ";
 $start = strtotime(fgets(STDIN));
-echo "Please enter duration of meeting : ";
+echo "Please enter duration of meeting in hrs eg. '1', '2.5': ";
 $duration = fgets(STDIN);
 
 function choose_vacant_time($start, $duration, $booked){
